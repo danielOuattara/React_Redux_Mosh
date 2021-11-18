@@ -16,11 +16,11 @@ const wrapInDiv = function(str) {
 }
 
 const toLowerCase = function(str) {
-    return str.toLowercase();
+    return str.toLowerCase();
 }
 
 
 // solution
-const result  = wrapInDiv( toLowerCase(trim(input))); // here is function composition
+const result = wrapInDiv(toLowerCase(trim(input))); // here is function composition
 
 // Next compose & pipe using lodash to reduce final writing complexity

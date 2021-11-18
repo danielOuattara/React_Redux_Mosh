@@ -13,7 +13,6 @@ function add(a) {
 
 add(1)(5) // <==> add(1, 5)
 
-
 const add = (a) => (b) => a + b
 
 add(1)(5) // <==> add(1, 5)

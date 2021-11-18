@@ -18,11 +18,11 @@ const wrapInDiv = function(str) {
 }
 
 const toLowerCase = function(str) {
-    return str.toLowercase();
+    return str.toLowerCase();
 }
 
-// const transformer = compose(wrapInDiv, toLowerCase, trim)  // 1
-const transformer = pipe(trim, toLowerCase, wrapInDiv);  // 2
+const transformer = compose(wrapInDiv, toLowerCase, trim)  // 1
+const transformer2 = pipe(trim, toLowerCase, wrapInDiv);  // 2
 
 /* solution
 -------------- */
@@ -30,3 +30,4 @@ const transformer = pipe(trim, toLowerCase, wrapInDiv);  // 2
 // const result  = wrapInDiv( toLowerCase(trim(input))); // here is function composition
 
 const result = transformer(input)
+const result2 = transformer2(input)

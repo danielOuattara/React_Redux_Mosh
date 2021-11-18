@@ -8,6 +8,10 @@ function sayHello () { // <-- high-order function
     }
 }
 
+ sayHello = () => () => "Hello!";
+  // <-- high-order function
+
+
 let fn = sayHello();
 let message = fn();
 
@@ -19,4 +23,6 @@ numbers.map(number => number * 3)
 
 //
 
-setTimeout(function(){ console.log("Hello")}, 2000)
+setTimeout(function(){ 
+    console.log("Hello")
+}, 2000)

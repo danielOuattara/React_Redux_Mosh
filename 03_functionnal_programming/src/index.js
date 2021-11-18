@@ -9,11 +9,14 @@
 
 //----------------------------------------
 
-function greet(func) {
-    console.log(func())
-}
+// function greet(func) {
+//     console.log(func())
+// }
 
-greet(sayHello);
+// function sayHello () {
+//     return "Hello!";
+// }
+// greet(sayHello);
 
 //-------------------------------------------
 
